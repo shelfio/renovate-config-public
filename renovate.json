@@ -1,0 +1,92 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "schedule": [
+    "every weekend",
+    "before 6am on Wednesday"
+  ],
+  "timezone": "Europe/Kiev",
+  "ignoreDeps": [
+    "@types/node"
+  ],
+  "prCreation": "not-pending",
+  "automergeType": "branch",
+  "labels": [
+    "dependencies"
+  ],
+  "updateNotScheduled": false,
+  "packageRules": [
+    {
+      "groupName": "Babel",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      },
+      "matchPackageNames": [
+        "@babel/core"
+      ]
+    },
+    {
+      "groupName": "Code Style Deps",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      },
+      "matchPackagePatterns": [
+        "^eslint"
+      ],
+      "matchPackageNames": [
+        "lint-staged",
+        "prettier",
+        "eslint"
+      ]
+    },
+    {
+      "groupName": "jest",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      },
+      "matchPackageNames": [
+        "@types/jest",
+        "babel-jest",
+        "jest"
+      ]
+    },
+    {
+      "groupName": "AWS CDK",
+      "matchPackagePatterns": [
+        "^@aws-cdk/"
+      ],
+      "matchPackageNames": [
+        "aws-cdk"
+      ]
+    },
+    {
+      "groupName": "Lodash",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      },
+      "matchPackageNames": [
+        "@types/lodash",
+        "lodash"
+      ]
+    },
+    {
+      "groupName": "Typings",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      },
+      "matchPackagePatterns": [
+        "^@types/"
+      ],
+      "excludePackageNames": [
+        "@types/lodash",
+        "@types/jest"
+      ]
+    }
+  ]
+}
