@@ -4,8 +4,8 @@
     ":disableDependencyDashboard"
   ],
   "schedule": [
-    "every weekend",
-    "before 6am on Wednesday"
+    "before 6am on Tuesday",
+    "before 6am on Friday"
   ],
   "timezone": "Europe/Kiev",
   "ignoreDeps": [
@@ -87,6 +87,16 @@
       "excludePackageNames": [
         "@types/lodash",
         "@types/jest"
+      ]
+    },
+    {
+      "groupName": "Typescript",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      },
+      "matchPackagePatterns": [
+        "typescript"
       ]
     }
   ]
