@@ -25,7 +25,9 @@
         "automerge": false
       },
       "matchPackageNames": [
-        "@babel/core"
+        "@babel/cli",
+        "@babel/core",
+        "@babel/node"
       ]
     },
     {
