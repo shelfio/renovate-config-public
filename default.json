@@ -73,6 +73,7 @@
       },
       "matchPackageNames": [
         "@types/lodash",
+        "@types/lodash-es",
         "lodash",
         "lodash-es"
       ]
