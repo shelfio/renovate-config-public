@@ -73,7 +73,21 @@
       },
       "matchPackageNames": [
         "@types/lodash",
-        "lodash"
+        "lodash",
+        "lodash-es"
+      ]
+    },
+    {
+      "groupName": "size-limit",
+      "automerge": true,
+      "major": {
+        "automerge": false
+      },
+      "matchPackagePatterns": [
+        "^@size-limit/"
+      ],
+      "matchPackageNames": [
+        "size-limit"
       ]
     },
     {
