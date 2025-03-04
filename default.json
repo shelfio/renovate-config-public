@@ -12,7 +12,7 @@
     "@types/node"
   ],
   "prCreation": "not-pending",
-  "automergeType": "branch",
+  "automergeType": "pr",
   "labels": [
     "dependencies"
   ],
