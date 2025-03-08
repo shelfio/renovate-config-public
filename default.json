@@ -4,8 +4,8 @@
     ":disableDependencyDashboard"
   ],
   "schedule": [
-    "before 6am on Thursday",
-    "before 10am on Sunday"
+    "* 0-5 * * 4",
+    "* 0-10 * * 7"
   ],
   "timezone": "Europe/Kiev",
   "ignoreDeps": [
