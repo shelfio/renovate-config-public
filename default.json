@@ -4,8 +4,7 @@
     ":disableDependencyDashboard"
   ],
   "schedule": [
-    "* 0-5 * * 4",
-    "* 0-10 * * 7"
+    "* 0-10 * * *"
   ],
   "timezone": "Europe/Kiev",
   "ignoreDeps": [
