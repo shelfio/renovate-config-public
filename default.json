@@ -10,6 +10,7 @@
   "ignoreDeps": [
     "@types/node"
   ],
+  "minimumReleaseAge": "14 days",
   "prCreation": "not-pending",
   "automergeType": "pr",
   "labels": [
@@ -114,6 +115,13 @@
       "matchPackagePatterns": [
         "typescript"
       ]
+    },
+    {
+      "description": "Do not delay internal Shelf packages",
+      "matchPackagePatterns": [
+        "^@shelf/"
+      ],
+      "minimumReleaseAge": null
     }
   ]
 }
